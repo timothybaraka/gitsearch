@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { UserComponent } from '../app/user/user.component';
-import { RepoDisplayComponent } from '../app/repo-display/repo-display.component'
+import { RepoDisplayComponent } from './repo/repo.component'
 
 const routes: Routes = [
     {path: 'users',component: UserComponent},
