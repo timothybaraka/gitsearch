@@ -8,7 +8,7 @@ import { RepoDisplayComponent } from './repo/repo.component';
 import { UserComponent } from './user/user.component';
 import { SearchComponent } from './search/search.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpClient } from 'selenium-webdriver/http';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { HttpClient } from 'selenium-webdriver/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClient
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
