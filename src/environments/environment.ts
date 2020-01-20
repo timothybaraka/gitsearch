@@ -5,6 +5,8 @@
 export const environment = {
   production: false,
   baseUrl: 'https://api.github.com/user',
+  searchUrl:'https://api.github.com/search/',
+  apiUrl: ' https://api.github.com/users/',
   accessToken: '4f8be650435ac536da42269b3a4b774f071f142d'
 };
 
