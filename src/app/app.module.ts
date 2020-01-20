@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GitsearchFormComponent } from './gitsearch-form/gitsearch-form.component';
 import { RepoDisplayComponent } from './repo-display/repo-display.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GitsearchFormComponent,
-    RepoDisplayComponent
+    RepoDisplayComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
