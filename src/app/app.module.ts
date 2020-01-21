@@ -9,6 +9,7 @@ import { UserComponent } from './user/user.component';
 import { SearchComponent } from './search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RepoSearchComponent } from './repo-search/repo-search.component';
+import { UserService } from './user.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { RepoSearchComponent } from './repo-search/repo-search.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../../environments/environment';
-import { FormsModule } from '@angular/forms';
-import { User }  from '../user'
+
 
 @Component({
   selector: 'app-search',

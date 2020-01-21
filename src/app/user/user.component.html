@@ -1,6 +1,10 @@
-<form>
+<form (ngSubmit) = "userSearch()">
         <div class="form-group">
           <label for="username">GitHub username</label>
-          <input type="text" placeholder="search.." >
-          <button type="submit"><i class="fa fa-search"></i></button>
+          <input type="text" placeholder="search.."  [(ngModel)]='username' name='username'>
+          <button type="submit" ><i class="fa fa-search"></i></button>
         </div>
+</form>
+
+<p>{{user.login}}</p>
+<img src='{{user.avatar_url}}' alt='my avatar_url'>

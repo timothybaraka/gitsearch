@@ -4,33 +4,33 @@
 
       <input class="input" name="username" [(ngModel)]="username">
       <div class="container">
-          <div>
-            <form (ngSubmit)='userSearch()'>
-        
-              <input class="input" name="q" [(ngModel)]="q">
-        
-              <button class="btn btn-success" type="submit">SEARCH</button><br>
-            </form>
-            <div class="row">
-              <div *ngFor='let use of users'>
-                <table class="table info-bio">
-                  <tbody>
-                    <tr>
-                      <th scope="row">Username:</th>
-                      <td> <a routerLink="/users/{{ use.login }}">{{ use.login }}</a> </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Profile Photo:</th>
-                      <td><img src="{{use.avatar_url}}" alt="" width="100px" height="100px"></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+        <div>
+          <form (ngSubmit)='userSearch()'>
+
+            <input class="input" name="q" [(ngModel)]="q">
+
+            <button class="btn btn-success" type="submit">SEARCH</button><br>
+          </form>
+          <div class="row">
+            <div *ngFor='let use of users'>
+              <table class="table info-bio">
+                <tbody>
+                  <tr>
+                    <th scope="row">Username:</th>
+                    <td> <a routerLink="/users/{{ use.login }}">{{ use.login }}</a> </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Profile Photo:</th>
+                    <td><img src="{{use.avatar_url}}" alt="" width="100px" height="100px"></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-        
-        
           </div>
+
+
         </div>
+      </div>
       <button class="btn btn-success" type="submit">SEARCH</button><br>
     </form>
     <div class="row">
