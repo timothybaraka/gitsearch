@@ -10,6 +10,7 @@ import { User } from './user';
 export class UserService {
   user: User;
 repos:any;
+  username: string;
   constructor(private http: HttpClient) {
     this.user = new User('', '');
     
@@ -44,5 +45,9 @@ repos:any;
     }
     getUser(username: string) {
       return this.http.get(`${environment.apiUrl}${username}/repos`);
+    }
+
+    updateProfile(username:string){
+      this.username=username;
     }
   }
