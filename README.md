@@ -16,7 +16,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Code Beat score
 
-
+[![codebeat badge](https://codebeat.co/badges/aae7d21b-9c6c-4e98-9e13-8826871fa63d)](https://codebeat.co/projects/github-com-timothybaraka-gitsearch-dev)
 
 ## Build
 
